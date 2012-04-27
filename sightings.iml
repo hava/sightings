@@ -52,7 +52,6 @@
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v3.2.3, RVM: ruby-1.9.3-p194 [sightings]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.3.2, RVM: ruby-1.9.3-p194 [sightings]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="journey (v1.0.3, RVM: ruby-1.9.3-p194 [sightings]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.3.6, RVM: ruby-1.9.3-p194 [sightings]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hike (v1.2.1, RVM: ruby-1.9.3-p194 [sightings]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v3.2.2, RVM: ruby-1.9.3-p194 [sightings]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v3.2.3, RVM: ruby-1.9.3-p194 [sightings]) [gem]" level="application" />
@@ -60,6 +59,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.6.1, RVM: ruby-1.9.3-p194 [sightings]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v0.9.2.2, RVM: ruby-1.9.3-p194 [sightings]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.1.16, RVM: ruby-1.9.3-p194 [sightings]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pg (v0.13.2, RVM: ruby-1.9.3-p194 [sightings]) [gem]" level="application" />
   </component>
 </module>
 

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  date: 2012-04-27
+  sighting_type: 
+  location: 
+  sighter: MyString
+  description: MyText
+  comment: MyText
+
+two:
+  date: 2012-04-27
+  sighting_type: 
+  location: 
+  sighter: MyString
+  description: MyText
+  comment: MyText

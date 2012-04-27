@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+SightingType.create([{name: 'Dolphin'}, {name: 'Whale'}, {name: 'Shark'}, {name: 'Other'}])

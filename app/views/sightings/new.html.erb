@@ -1,0 +1,41 @@
+<%= form_for(@sighting) do |f| %>
+  <% if @sighting.errors.any? %>
+  <div id="errorExplanation">
+    <h2><%= pluralize(@sighting.errors.count, "error") %> prohibited
+        this sighting from being saved:</h2>
+    <ul>
+    <% @sighting.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :sighting_type %><br />
+    <%= f.collection_select :sighting_type, SightingType.all, :id, :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :seen_by %><br />
+    <%= f.text_field :sighter %>
+  </div>
+    <div class="field">
+      <%= f.label :comment %><br />
+      <%= f.text_area :comment %>
+    </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
