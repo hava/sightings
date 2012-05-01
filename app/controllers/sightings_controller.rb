@@ -1,10 +1,11 @@
 class SightingsController < ApplicationController
   def index
-
+    @sightings = Sighting.all
   end
 
   def new
     @sighting = Sighting.new
+    @sighting.location = Location.new
   end
 
   def create
@@ -22,5 +23,9 @@ class SightingsController < ApplicationController
                              :status => :unprocessable_entity }
       end
     end
+  end
+
+  def show
+    @sighting = Sighting.find(params[:id])
   end
 end

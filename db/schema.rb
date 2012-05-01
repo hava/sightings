@@ -11,12 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120427153931) do
+ActiveRecord::Schema.define(:version => 20120429191329) do
 
   create_table "locations", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.integer  "sighting_id"
   end
 
   create_table "sighting_types", :force => true do |t|
@@ -28,7 +29,6 @@ ActiveRecord::Schema.define(:version => 20120427153931) do
   create_table "sightings", :force => true do |t|
     t.date     "date"
     t.integer  "sighting_type_id"
-    t.integer  "location_id"
     t.string   "sighter"
     t.text     "description"
     t.text     "comment"
@@ -36,7 +36,6 @@ ActiveRecord::Schema.define(:version => 20120427153931) do
     t.datetime "updated_at",       :null => false
   end
 
-  add_index "sightings", ["location_id"], :name => "index_sightings_on_location_id"
   add_index "sightings", ["sighting_type_id"], :name => "index_sightings_on_sighting_type_id"
 
 end

@@ -1,3 +1,29 @@
+<%= link_to "New Sighting", new_sighting_path  %>
+
 <h1>Sightings</h1>
 
-<%= link_to "New Sighting", new_sightings_path  %>
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Location</th>
+    <th>Sighting type</th>
+    <th>Decription</th>
+    <th>Seen by</th>
+    <th>Comment</th>
+    <th></th>
+  </tr>
+
+<% @sightings.each do |sighting| %>
+  <tr>
+    <td><%= sighting.date %></td>
+    <td><%= sighting.location.name %></td>
+    <td><%= sighting.sighting_type.name %></td>
+    <td><%= sighting.description %></td>
+    <td><%= sighting.sighter %></td>
+    <td><%= sighting.comment %></td>
+    <td><%= link_to 'Show', sighting %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />

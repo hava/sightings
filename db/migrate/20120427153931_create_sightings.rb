@@ -3,7 +3,6 @@ class CreateSightings < ActiveRecord::Migration
     create_table :sightings do |t|
       t.date :date
       t.references :sighting_type
-      t.references :location
       t.string :sighter
       t.text :description
       t.text :comment
